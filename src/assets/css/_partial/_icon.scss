@@ -1,0 +1,95 @@
+@mixin icon-triangle($direction: up, $width: 50px, $height: 20px, $color: #444) {
+  // @include icon-triangle(up, 50px, 20px, #ccc);
+  cursor: pointer;
+  &::before {
+    @include transition();
+    content: '';
+    position: absolute;
+    display: inline-block;
+    @include float(centerMiddle);
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    @if ($direction == up) {
+      border-left: ($width / 2) solid transparent;
+      border-right: ($width / 2) solid transparent;
+      border-bottom: $height solid $color;
+    }
+    @if ($direction == down) {
+      border-left: ($width / 2) solid transparent;
+      border-right: ($width / 2) solid transparent;
+      border-top: $height solid $color;
+    }
+    @if ($direction == right) {
+      border-top: ($width / 2) solid transparent;
+      border-bottom: ($width / 2) solid transparent;
+      border-left: $height solid $color;
+    }
+    @if ($direction == left) {
+      border-top: ($width / 2) solid transparent;
+      border-bottom: ($width / 2) solid transparent;
+      border-right: $height solid $color;
+    }
+  }
+}
+
+@mixin icon-cross($width: 20px, $size: 2px, $color: #444) {
+  // @include icon-cross(30px, 2px, #333);
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: $size !important;
+    width: $width !important;
+    @include border-radius(1px);
+    background-color: $color;
+    @include float(centerMiddle);
+    @include opacity(1);
+    @include transition(all 0.2s linear 0.5s);
+  }
+  &::before {
+    @include rotate(45);
+  }
+  &::after {
+    @include rotate(135);
+  }
+}
+
+@mixin icon-arrow($direction: up, $width: 20px, $height: 20px, $size: 2px, $color: #444) {
+  // @include icon-arrow(30px, 2px, #333);
+  // @include dbbg();
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: $width !important;
+    width: $width !important;
+    @include float(centerMiddle);
+    @include rotate(45);
+    border: $size solid $color;
+    @if ($direction == up) {
+      border-right: 0px;
+      border-bottom: 0px;
+      margin-top: $width / 4;
+    }
+    @if ($direction == down) {
+      border-left: 0px;
+      border-top: 0px;
+      margin-top: -$width / 4;
+    }
+    @if ($direction == right) {
+      border-bottom: 0px;
+      border-left: 0px;
+      margin-left: -$width / 4;
+    }
+    @if ($direction == left) {
+      border-top: 0px;
+      border-right: 0px;
+      margin-left: $width / 4;
+    }
+  }
+}

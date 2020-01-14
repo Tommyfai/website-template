@@ -1,0 +1,17 @@
+@import '_partial/index';
+
+html {
+  background-color: #fff;
+  font-size: 14px;
+  height: 100%;
+  body {
+    @include box-sizing();
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    > #app {
+      border: 0px solid #000;
+    }
+  }
+}

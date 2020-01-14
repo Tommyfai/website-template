@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: bold;
+  font-weight: bold;
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/Roboto-Regular.svg') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'),
+    url('../fonts/Roboto-Light.svg') format('svg');
+}
+// @font-face {
+//   font-family: 'Noto Sans TC';
+//   font-style: normal;
+//   font-weight: lighter;
+//   src: url('../fonts/NotoSansTC-Light.woff2') format('woff2'), url('../fonts/NotoSansTC-Light.woff') format('woff'),
+//     url('../fonts/NotoSansTC-Light.otf') format('opentype');
+// }
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/NotoSansTC-Regular.woff') format('woff'), url('../fonts/NotoSansTC-Regular.otf') format('opentype');
+}
+// @font-face {
+//   font-family: 'Noto Sans SC';
+//   font-style: normal;
+//   font-weight: lighter;
+//   src: url('../fonts/NotoSansSC-Light.woff2') format('woff2'), url('../fonts/NotoSansSC-Light.woff') format('woff'),
+//     url('../fonts/NotoSansSC-Light.otf') format('opentype');
+// }
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/NotoSansSC-Regular.woff') format('woff'), url('../fonts/NotoSansSC-Regular.otf') format('opentype');
+}
