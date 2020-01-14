@@ -5,7 +5,7 @@
         <template v-if="menu.icon">
           <i :class="'icon ti-' + menu.icon"></i>
         </template>
-        {{ menu.text }} s s
+        {{ menu.text }}
         <template v-if="menu.menus">
           <template v-if="mode == 'accordion'">
             <i class="arrow hori ti-angle-down"></i>
