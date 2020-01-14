@@ -5,7 +5,7 @@
         <template v-if="menu.icon">
           <i :class="'icon ti-' + menu.icon"></i>
         </template>
-        {{ menu.text }}
+        {{ menu.text }} s
         <template v-if="menu.menus">
           <template v-if="mode == 'accordion'">
             <i class="arrow hori ti-angle-down"></i>
@@ -78,6 +78,7 @@ export default {
       tl.to(tgt, this.speed, { autoAlpha: 1 })
       // tl.delay(1200).to(tgt, this.speed, { autoAlpha: 1 })
       // gsap.fromTo(tgt, { opacity: 0 }, { opacity: 1, duration: 1 })
+      // abac
     },
     hideChild: function() {
       var tgt = this.$refs.ChildUL
